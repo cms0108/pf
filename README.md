@@ -2,7 +2,7 @@
 
 git test repository
 
-## git tes
+## git test
 
 ## hello world
 
