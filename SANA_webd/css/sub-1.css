@@ -1,0 +1,286 @@
+/* 서브공통 */
+section {
+  padding: 60px 0 0 0;
+}
+section > p {
+  font-size: 16px;
+  color: #5e5e5e;
+  text-align: center;
+  margin-bottom: 70px;
+}
+section h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #bb2727;
+  text-align: center;
+  /* text-transform: uppercase; */
+  margin-bottom: 36px;
+}
+
+/* sub-main visual */
+.main-visual {
+  width: 100%;
+  height: 500px;
+  background: url(../img/sub/sub-main-img.png) no-repeat center/cover;
+  color: #fff;
+  padding: 0;
+  position: relative;
+  margin-top: -100px;
+  background-color: #5e5e5e;
+}
+.main-visual > h2 {
+  font-size: 3.75rem; /*  60px  */
+  font-weight: 600;
+  position: absolute;
+  top: calc(50% - 45px);
+  left: calc(50% - 145px);
+}
+/* //sub-main visual */
+
+/* 모험에 대한 열정, 완벽에 대한 집착 */
+.sec-tim {
+  background-color: #fff;
+  padding: 90px 0 96px;
+  width: 1280px;
+  height: 458px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.sec-tim article {
+  display: flex;
+  justify-content: space-between;
+}
+section article .depth1 {
+  width: 550px;
+}
+section article .depth1 h3 {
+  text-align: left;
+}
+section article .depth1 p {
+  text-align: left;
+}
+/* //모험에 대한 열정, 완벽에 대한 집착 */
+
+/* 연혁 */
+section #wrap {
+  height: 1360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section .year-area {
+  width: 67%; /* (1280/1920)*100 */
+  height: 430px;
+  /* border: 2px solid tomato; */
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+}
+article .year {
+  width: 320px;
+  height: 420px;
+  /* border: 2px solid rebeccapurple; */
+  transition: 0.5s;
+}
+article div .img1 {
+  width: 100%;
+  height: 210px;
+  background: url(../img/sub/01-2024-12-18\ 044151.png) no-repeat center/cover;
+}
+article .year_2 {
+  border: 4px solid transparent;
+}
+article .year_2:hover {
+  /* transform: scale3d(1.2, 1.2, 1.2) translateZ(100px); */
+  border: 4px solid #bb2727;
+  z-index: 9;
+  /* box-shadow: 5px 5px 10px #dedede, -5px -5px 10px #fff; */
+}
+article .year_2:hover .text2 {
+  color: #bb2727;
+  border: 2px solid #bb2727;
+}
+
+article div .img2 {
+  width: 100%;
+  height: 210px;
+  background: url(../img/sub/02-2024-12-18\ 044151.png) no-repeat center/cover;
+}
+article div .img3 {
+  width: 100%;
+  height: 210px;
+  background: url(../img/sub/03-2024-12-18\ 044151.png) no-repeat center/cover;
+}
+article div .img4 {
+  width: 100%;
+  height: 210px;
+  background: url(../img/sub/04-2024-12-18\ 044151.png) no-repeat center/cover;
+}
+article div .img5 {
+  width: 100%;
+  height: 210px;
+  background: url(../img/sub/05-2024-12-18\ 044151.png) no-repeat center/cover;
+}
+article div .img6 {
+  width: 100%;
+  height: 210px;
+  background: url(../img/sub/06-2024-12-18\ 044151.png) no-repeat center/cover;
+}
+article div .img7 {
+  width: 100%;
+  height: 210px;
+  background: url(../img/sub/07-2024-12-18\ 044151.png) no-repeat center/cover;
+}
+article div .img8 {
+  width: 100%;
+  height: 210px;
+  background: url(../img/sub/08-2024-12-18\ 044151.png) no-repeat center/cover;
+}
+article div .img9 {
+  width: 100%;
+  height: 210px;
+  background: url(../img/sub/09-2024-12-18\ 044151.png) no-repeat center/cover;
+}
+article div .img10 {
+  width: 100%;
+  height: 210px;
+  background: url(../img/sub/10-2024-12-18\ 044151.png) no-repeat center/cover;
+}
+article div .img11 {
+  width: 100%;
+  height: 210px;
+  background: url(../img/sub/11-2024-12-18\ 044151.png) no-repeat center/cover;
+}
+
+.text-area {
+  width: 100%; /*320px*/
+  height: 210px;
+  padding: 0 20px;
+  /* border: 3px solid green; */
+  position: relative;
+  text-align: center;
+}
+.text-area h5,
+p {
+  /* display: block; */
+  text-align: center;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.text-area a {
+  text-align: center;
+  /* width: 150px;
+    border: 2px solid;
+    border-radius: 50px; */
+}
+.text-area h5 {
+  font-size: 1.3rem;
+  margin: 30px 0;
+}
+/* .text-area span {
+    width: 82px;
+    height: 35px;
+    line-height: 31px;
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: 50px;
+    position: absolute;
+    bottom: 50px;
+    left: calc(50% - 39px);
+} */
+.text-area .text2 {
+  width: 150px;
+  height: 40px;
+  line-height: 2.2;
+  border: 2px solid rgb(171, 171, 171);
+  border-radius: 50px;
+  margin: 0 auto;
+}
+.text-area a {
+  text-align: center;
+}
+
+.connecting > img {
+  width: 100%;
+  margin-top: -120px;
+  margin-bottom: 60px;
+}
+
+.sec-year {
+  width: 100%;
+  height: 1800px;
+  background: url(../img/sub/gray-background.png) no-repeat center/cover;
+}
+
+/* //연혁 */
+
+/* 기업비전 */
+.wrap3 {
+  width: 100%;
+  height: 800px;
+}
+.tim-icon {
+  width: 1280px;
+  height: 430px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 90px 0 96px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.icon-area {
+  width: 365px;
+  height: 430px;
+  text-align: center;
+}
+.icon-area img {
+  height: 210px;
+}
+.icon-area h5 {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 40px 0;
+}
+.icon-area p {
+  text-align: justify;
+}
+/* //기업비전 */
+
+/* .connecting-2 {
+    width: 1920px;
+    height: 450px;
+} */
+.connecting-2 > div {
+  width: 100%;
+  height: 450px;
+  background: url(../img/sub/Transcontinental_U.S.png) no-repeat center/cover;
+}
+
+/* 글로벌 비즈니스 */
+.Global-wrap {
+  background-color: rgb(241, 241, 241);
+  width: 100%;
+  height: 500px;
+}
+.Global-Business {
+  padding: 90px 0 96px 0;
+  width: 1200px;
+  height: 338px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.Global-Business article {
+  display: flex;
+  justify-content: space-between;
+}
+section article .Business {
+  width: 555px;
+}
+section article .Business h3 {
+  text-align: left;
+}
+section article .Business p {
+  text-align: left;
+}
+/* //글로벌 비즈니스 */

@@ -1,0 +1,177 @@
+header {
+  width: 100%;
+  height: 100px;
+  /* background-color: bisque; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 9999;
+}
+header .top-group {
+  width: 100%;
+  height: 100px;
+  color: #fff;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 30px;
+}
+header h1 {
+  margin: 20px 20px 0 90px;
+}
+/* gnb */
+header .gnb_wrap ul {
+  font-size: 1.125rem; /*18px*/
+  font-weight: 500;
+  /* display: flex; */
+  gap: 20px;
+  text-align: center;
+  line-height: 2.3;
+  /* width: 200px; */
+  /* height: 200px; */
+}
+.top-right {
+  width: 330px;
+  font-size: 1.125rem; /*18px*/
+  font-weight: 500;
+  color: #fff;
+  display: flex;
+  gap: 55px;
+}
+.top-right button {
+  margin-right: 90px;
+}
+
+.depth2 li > a {
+  font-size: 16px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit; /*부모 속성 받음*/
+}
+.gnb {
+  display: flex;
+  justify-content: center;
+}
+.gnb > li {
+  width: 120px;
+  height: 40px;
+  /* border: 1px solid; */
+}
+
+.gnb > li a {
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 10px;
+  /* background-color: #eee; */
+}
+.gnb > li:hover > a {
+  /*li에 주면 하위 메뉴 호브와 같이 동작*/
+  /* background-color: burlywood; */
+}
+.depth2 a:hover {
+  background-color: orange;
+}
+
+/*동적 구현을 위한 스타일*/
+.depth2 {
+  height: 0; /*있는데 안보임 중요*/
+  overflow: hidden;
+  transition: 0.5s;
+}
+.gnb > li:hover .depth2 {
+  height: 190px; /* 38px*5개=190px */
+}
+
+/* .top-right>button:hover .depth2 {
+    height: 190px;    
+} */
+
+/* footer */
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+footer {
+  background-color: #121212;
+  padding: 40px 0 66px;
+  color: #fff;
+}
+.footer {
+  display: flex;
+}
+footer .foot-logo {
+  width: 145px;
+  margin-right: 60px;
+}
+.foot-nav {
+  display: flex;
+  gap: 44px;
+  margin-bottom: 7px;
+}
+.foot-nav li {
+  position: relative;
+}
+.foot-nav li:not(:nth-child(1))::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 2px;
+  background-color: #5e5e5e;
+  position: absolute;
+  top: 50%;
+  left: -20px;
+}
+.foot-center address {
+  margin-top: 20px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500; /*medium*/
+  color: #919191;
+}
+.foot-center address span {
+  margin-right: 21px;
+  position: relative;
+}
+.foot-center address span:not(:nth-child(1))::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 10px;
+  background-color: #5e5e5e;
+  position: absolute;
+  top: 50%;
+  left: -11px;
+  transform: translateY(-50%);
+}
+.foot-right {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.family-wrap {
+  width: 178px;
+  height: 30px;
+  position: relative;
+}
+.family-wrap p {
+  width: 178px;
+  height: 30px;
+  color: #919191;
+  border: 1px solid;
+  text-align: center;
+  line-height: 28px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.foot-right ul {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
