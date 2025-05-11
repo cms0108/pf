@@ -11109,6 +11109,13 @@ span > img {
   width: 30px;
   margin: 5px;
 }
+.face .masthead-avatar {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
 
 
 /* 초기값일부만 */
