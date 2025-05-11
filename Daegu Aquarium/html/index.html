@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>대구아쿠아리움 | 매일 매일 색다른 즐거움</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style-main.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/images/ico_favicon.svg"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/eafcf9ecf2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header on" id="header">
+      <div class="header_wrap container">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="./assets/images/logo.svg" alt="대구아쿠아리움 로고" />
+          </a>
+        </h1>
+        <div class="gnb_wrap">
+          <nav class="gnb_inner">
+            <ul class="list" id="gnb">
+              <li class="depth01">
+                <a href="./sub1.html">
+                  <span>대구아쿠아리움</span>
+                </a>
+                <div class="snb_wrap">
+                  <div class="text_list">
+                    <ul>
+                      <li class="depth02">
+                        <a href="./sub1.html">
+                          <span>대구아쿠아리움 소개</span>
+                        </a>
+                      </li>
+                      <li class="depth02">
+                        <a href="#none">
+                          <span>공지사항</span>
+                        </a>
+                      </li>
+                      <li class="depth02">
+                        <a href="#none">
+                          <span>관람안내</span>
+                        </a>
+                      </li>
+                      <li class="depth02">
+                        <a href="#none">
+                          <span>자주 묻는 질문</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="depth01">
+                <a href="./sub2.html">
+                  <span>아쿠아리움 이야기</span>
+                </a>
+                <div class="snb_wrap">
+                  <div class="text_list">
+                    <ul>
+                      <li class="depth02">
+                        <a href="./sub2.html">
+                          <span>아쿠아리움친구들</span>
+                        </a>
+                      </li>
+                      <li class="depth02">
+                        <a href="#none">
+                          <span>아쿠아입주민이야기</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="depth01">
+                <a href="./sub3.html">
+                  <span>공연·체험</span>
+                </a>
+                <div class="snb_wrap">
+                  <div class="text_list">
+                    <ul>
+                      <li class="depth02">
+                        <a href="./sub3.html">
+                          <span>공연안내</span>
+                        </a>
+                      </li>
+                      <li class="depth02">
+                        <a href="#none">
+                          <span>프로그램</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="depth01">
+                <a href="#">
+                  <span>입장권 안내</span>
+                </a>
+                <div class="snb_wrap">
+                  <div class="text_list">
+                    <ul>
+                      <li class="depth02">
+                        <a href="#none">
+                          <span>입장권 및 프로모션</span>
+                        </a>
+                      </li>
+                      <li class="depth02">
+                        <a href="#none">
+                          <span>단체 입장권</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="depth2_bg"></div>
+            <div class="cta">
+              <a href="./sub4.html">티켓예매하기</a>
+            </div>
+          </nav>
+          <div class="ham-menu">
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+          </div>
+          <div class="mo_gnb_inner">
+            <ul class="mo_list" id="gnbMobile">
+              <li class="mo_depth01">
+                <a href="./sub1.html">
+                  <span>대구아쿠아리움</span>
+                </a>
+                <button class="depth_btn" type="button"></button>
+                <div class="mo_snb_wrap">
+                  <div class="mo_text_list">
+                    <ul>
+                      <li class="mo_depth02">
+                        <a href="./sub1.html">
+                          <span>대구아쿠아리움 소개</span>
+                        </a>
+                      </li>
+                      <li class="mo_depth02">
+                        <a href="#none">
+                          <span>공지사항</span>
+                        </a>
+                      </li>
+                      <li class="mo_depth02">
+                        <a href="#none">
+                          <span>관람안내</span>
+                        </a>
+                      </li>
+                      <li class="mo_depth02">
+                        <a href="#none">
+                          <span>자주 묻는 질문</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="mo_depth01">
+                <a href="./sub2.html">
+                  <span>아쿠아리움 이야기</span>
+                </a>
+                <button class="depth_btn" type="button"></button>
+                <div class="mo_snb_wrap">
+                  <div class="mo_text_list">
+                    <ul>
+                      <li class="depth02">
+                        <a href="./sub2.html">
+                          <span>아쿠아리움친구들</span>
+                        </a>
+                      </li>
+                      <li class="mo_depth02">
+                        <a href="#none">
+                          <span>아쿠아입주민이야기</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="mo_depth01">
+                <a href="./sub3.html">
+                  <span>공연·체험</span>
+                </a>
+                <button class="depth_btn" type="button"></button>
+                <div class="mo_snb_wrap">
+                  <div class="mo_text_list">
+                    <ul>
+                      <li class="mo_depth02">
+                        <a href="./sub3.html">
+                          <span>공연안내</span>
+                        </a>
+                      </li>
+                      <li class="mo_depth02">
+                        <a href="#none">
+                          <span>프로그램</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="mo_depth01">
+                <a href="#">
+                  <span>입장권 안내</span>
+                </a>
+                <button class="depth_btn" type="button"></button>
+                <div class="mo_snb_wrap">
+                  <div class="mo_text_list">
+                    <ul>
+                      <li class="mo_depth02">
+                        <a href="#none">
+                          <span>입장권 및 프로모션</span>
+                        </a>
+                      </li>
+                      <li class="mo_depth02">
+                        <a href="#none">
+                          <span>단체 입장권</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="mo_depth2_bg"></div>
+            <div class="mo_cta">
+              <a href="./sub4.html">티켓예매하기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- //header -->
+
+    <!-- main visual -->
+    <!-- 섹션01 -->
+    <section class="section01">
+      <div class="swiper main-visual">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide visual-content">
+            <div class="slide-text-wrap">
+              <h2>대구아쿠아리움</h2>
+              <p>
+                매일 매일 색다른 즐거움이 펼쳐지며, 체험과 참여 그리고 교감을
+                통해 판타스틱하고 환상적인 체험들을 선사하는 펀(Fun)한
+                대구아쿠아리움을 만나보세요.
+              </p>
+            </div>
+            <div class="video-wrap">
+              <video id="slideVideo1" muted autoplay playsinline loop>
+                <source
+                  src="./assets/images/vid-horizontal-02.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support this video tag.
+              </video>
+            </div>
+          </div>
+          <div class="swiper-slide visual-content">
+            <div class="slide-text-wrap">
+              <h2>
+                도심 속에서 즐기는<br class="pcbr" />
+                시원한 바다 속 세상!
+              </h2>
+              <p>
+                매일 매일 색다른 즐거움이 펼쳐지며, 체험과 참여, 교감을 통해
+                특별한 경험과 잊지 못할 감동을 선사합니다.
+              </p>
+            </div>
+            <div class="video-wrap">
+              <video id="slideVideo2" muted autoplay playsinline loop>
+                <source
+                  src="./assets/images/vid-horizontal-01.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support this video tag.
+              </video>
+            </div>
+          </div>
+          <div class="swiper-slide visual-content">
+            <div class="slide-text-wrap">
+              <h2>다양한 체험과 공연으로 소중한 추억을!</h2>
+              <p>
+                매일 매일 색다른 즐거움이 펼쳐지며, 체험과 참여, 교감을 통해
+                특별한 경험과 잊지 못할 감동을 선사합니다.
+              </p>
+            </div>
+            <div class="video-wrap">
+              <video id="slideVideo3" muted autoplay playsinline loop>
+                <source
+                  src="./assets/images/vid-horizontal-03.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support this video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination visual-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-prev visual-prev"></div>
+        <div class="swiper-button-next visual-next"></div>
+      </div>
+      <div class="hour-info">
+        <div class="hour-info-wrap">
+          <div class="btn">
+            <span class="clock"><i class="fa-regular fa-clock"></i></span>
+            <span class="op-hours">운영시간</span>
+          </div>
+          <div class="hours">
+            <span class="weekday">
+              <span class="margin"><b>평일</b>(월~목)</span
+              ><br class="pcbr" />10:30 ~ 20:00
+            </span>
+            <span class="weekend">
+              <span class="margin"><b>주말</b>(금~일, 공휴일)</span
+              ><br class="pcbr" />10:30 ~ 20:30
+            </span>
+            <span class="last-enter">
+              <span class="margin"><b>입장마감</b></span
+              ><br class="pcbr" />19:00(평일, 주말 동일)
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //main visual -->
+
+    <!-- content -->
+    <!-- 섹션02 -->
+    <section class="section02">
+      <div class="section02-wrap">
+        <div class="title-text-wrap">
+          <h2 class="section-title">아쿠아리움 친구들</h2>
+          <p class="section-content">
+            동물들이 쾌적한 환경에서 살아갈 수 있도록 만들어 주고, 동물들의
+            행동을 관찰하는 대구아쿠아리움의 아쿠아리스트들이 들려주는
+            흥미진진한 해양 생물 이야기
+          </p>
+        </div>
+        <div class="swiper container sec02-slide">
+          <div class="swiper-wrapper card-slide">
+            <div class="swiper-slide card-item">
+              <div class="cont">
+                <div class="slide-bg">
+                  <img
+                    src="./assets/images/marine-life-01-1x.png"
+                    alt="흑기흉상어"
+                  />
+                </div>
+                <div class="text-box">
+                  <h3 class="tit">흑기흉상어</h3>
+                  <p class="cate">
+                    <span class="cate-txt"
+                      >학명 : Carcharhinus melanopterus</span
+                    ><br />
+                    <span class="cate-txt"
+                      >분류 : 척삭동물 > 연골어강 > 흉상어목 > 흉상어과</span
+                    >
+                  </p>
+                  <p class="exp">
+                    <span class="esp-txt"
+                      >빠밤~ 빠밤~ 빠밤 빠밤 빠밤~~~!!! 상어다~~</span
+                    ><br />
+                    <span class="esp-txt"
+                      >지느러미 무늬 끝부분이 검정색으로 되어 있어요.</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card-item">
+              <div class="cont">
+                <div class="slide-bg">
+                  <img
+                    src="./assets/images/marine-life-02-1x.png"
+                    alt="흰동가리"
+                  />
+                </div>
+                <div class="text-box">
+                  <h3 class="tit">흰동가리</h3>
+                  <p class="cate">
+                    <span class="cate-txt">학명 : Amphiprion ocellaris</span
+                    ><br />
+                    <span class="cate-txt"
+                      >분류 : 척삭동물 > 경골어류 > 농어목 > 자리돔과</span
+                    >
+                  </p>
+                  <p class="exp">
+                    <span class="esp-txt"
+                      >애니메이션에 등장해 유명해진 흰동가리!</span
+                    ><br />
+                    <span class="esp-txt">말미잘과 공생하는 물고기랍니다.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card-item">
+              <div class="cont">
+                <div class="slide-bg">
+                  <img
+                    src="./assets/images/marine-life-03-1x.png"
+                    alt="가든일"
+                  />
+                </div>
+                <div class="text-box">
+                  <h3 class="tit">가든일</h3>
+                  <p class="cate">
+                    <span class="cate-txt">학명 : Heteroconger hassi</span
+                    ><br />
+                    <span class="cate-txt"
+                      >분류 : 척색동물문 > 조기아강 > 뱀장어목 > 붕장어과</span
+                    >
+                  </p>
+                  <p class="exp">
+                    <span class="esp-txt">겁이많아 숨기 좋아하는 가든일!</span
+                    ><br />
+                    <span class="esp-txt"
+                      >먹이를 먹을 때 조차 구멍을 절대 벗어나질 않아요.</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card-item">
+              <div class="cont">
+                <div class="slide-bg">
+                  <img
+                    src="./assets/images/marine-life-04-1x.png"
+                    alt="매너티"
+                  />
+                </div>
+                <div class="text-box">
+                  <h3 class="tit">매너티</h3>
+                  <p class="cate">
+                    <span class="cate-txt">학명 : Trichechus senegalensis</span
+                    ><br />
+                    <span class="cate-txt"
+                      >분류 : 척삭동물 > 포유류 > 바다소목 > 매너티과</span
+                    >
+                  </p>
+                  <p class="exp">
+                    <span class="esp-txt"
+                      >하루 20kg의 먹이를 먹는 먹보 인어 매너티!</span
+                    ><br />
+                    <span class="esp-txt">매너티는 야채를 좋아한답니다.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card-item">
+              <div class="cont">
+                <div class="slide-bg">
+                  <img
+                    src="./assets/images/marine-life-05-1x.png"
+                    alt="지브라상어"
+                  />
+                </div>
+                <div class="text-box">
+                  <h3 class="tit">지브라상어</h3>
+                  <p class="cate">
+                    <span class="cate-txt">학명 : Stegostoma fasciatum</span
+                    ><br />
+                    <span class="cate-txt"
+                      >분류 : 척삭동물 > 연골어류 > 수염상어목 >
+                      제브라상어과</span
+                    >
+                  </p>
+                  <p class="exp">
+                    <span class="esp-txt"
+                      >어릴 때와 어른일 때의 모습이 달라요.</span
+                    ><br />
+                    <span class="esp-txt"
+                      >보기와 달리 온순한 성격을 가지고 있답니다.</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card-item">
+              <div class="cont">
+                <div class="slide-bg">
+                  <img
+                    src="./assets/images/marine-life-06-1x.png"
+                    alt="피라냐"
+                  />
+                </div>
+                <div class="text-box">
+                  <h3 class="tit">피라냐</h3>
+                  <p class="cate">
+                    <span class="cate-txt">학명 : Pygocentrus nattereri</span
+                    ><br />
+                    <span class="cate-txt"
+                      >분류 : 척삭동물 > 경골어류 > 잉어목 > 카라신과</span
+                    >
+                  </p>
+                  <p class="exp">
+                    <span class="esp-txt">날카로운 이빨이 특징인 피라냐!</span
+                    ><br />
+                    <span class="esp-txt"
+                      >아마존 원주민 말로 ‘이빨 있는 물고기’라는 뜻이래요.</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card-item">
+              <div class="cont">
+                <div class="slide-bg">
+                  <img
+                    src="./assets/images/marine-life-07-1x.png"
+                    alt="아로와나"
+                  />
+                </div>
+                <div class="text-box">
+                  <h3 class="tit">아로와나</h3>
+                  <p class="cate">
+                    <span class="cate-txt">학명 : Osteoglossum bicirrhosum</span
+                    ><br />
+                    <span class="cate-txt"
+                      >분류 : 척삭동물 > 조기어류 > 골설어목 > 골설어류과</span
+                    >
+                  </p>
+                  <p class="exp">
+                    <span class="esp-txt">아마존의 은빛 거구 아로와나!</span
+                    ><br />
+                    <span class="esp-txt"
+                      >아로와나는 크기가 1m 이상 자란답니다.</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card-item">
+              <div class="cont">
+                <div class="slide-bg">
+                  <img
+                    src="./assets/images/marine-life-08-1x.png"
+                    alt="훔볼트펭귄"
+                  />
+                </div>
+                <div class="text-box">
+                  <h3 class="tit">훔볼트펭귄</h3>
+                  <p class="cate">
+                    <span class="cate-txt">학명 : Spheniscus humboldti</span
+                    ><br />
+                    <span class="cate-txt"
+                      >분류 : 척삭동물 > 조류 > 펭귄목 > 펭귄과</span
+                    >
+                  </p>
+                  <p class="exp">
+                    <span class="esp-txt">페루에서 온 신사 훔볼트펭귄!</span
+                    ><br />
+                    <span class="esp-txt"
+                      >남극이 아니라 남아메리카 서해안에서 주로 분포해요</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card-item">
+              <div class="cont">
+                <div class="slide-bg">
+                  <img
+                    src="./assets/images/marine-life-09-1x.png"
+                    alt="캘리포니아 바다사자"
+                  />
+                </div>
+                <div class="text-box">
+                  <h3 class="tit">캘리포니아 바다사자</h3>
+                  <p class="cate">
+                    <span class="cate-txt">학명 : Zalophus californianus</span
+                    ><br />
+                    <span class="cate-txt"
+                      >분류 : 척삭동물 > 포유류 > 기각목 > 바다사자과</span
+                    >
+                  </p>
+                  <p class="exp">
+                    <span class="esp-txt"
+                      >호기심이 많고 큰 눈을 가진 캘리포니아 바다사자!</span
+                    ><br />
+                    <span class="esp-txt"
+                      >수염으로 수중에서 먹잇감의 위치를 정확히 파악해요.</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination sec02-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션03 -->
+    <section class="section03">
+      <div class="section03-wrap">
+        <div class="sec03-title-wrap">
+          <h2 class="section-title">아쿠아리움의 공연·체험</h2>
+          <p class="section-content">
+            다양한 해양 생물들을 가까이에서 만나보는 특별한 경험과 추억을 만들어
+            보세요
+          </p>
+          <div class="btn">
+            <a href="./sub2.html" class="btn-detail"
+              >자세히 보기<span><i class="fa-solid fa-chevron-right"></i></span
+            ></a>
+          </div>
+        </div>
+        <div class="img-obj-wrap">
+          <div class="shade">
+            <img src="./assets/images/section03_img_2_under.svg" alt="" />
+          </div>
+          <div class="image">
+            <img src="./assets/images/section03_img_2.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션04 -->
+    <section class="section04">
+      <div class="section04-wrap">
+        <h2 class="section-title">아쿠아리움의 프로그램</h2>
+        <p class="section-content">사람과 자연이 공생하는 즐거운 세상</p>
+        <div class="slidearea">
+          <div class="content">
+            <div class="swiper portfolio_gall">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="./assets/images/section04_img_6.jpg" alt="" />
+                  <div class="info">
+                    <div>
+                      <div class="tit">아쿠아 패밀리 캠프</div>
+                      <div class="exp">
+                        아쿠아 나이트 캠프! 대구아쿠아리움에서 단체로 즐기는
+                        특별한 하룻밤을 즐겨보세요!
+                      </div>
+                      <div class="btn-wrap">
+                        <div class="btn">
+                          <button
+                            class="btn_prev"
+                            tabindex="0"
+                            type="button"
+                            aria-label="Previous slide"
+                            aria-disabled="false"
+                          >
+                            <img src="./assets/images/btn_prev.png" alt="" />
+                          </button>
+                          <button
+                            class="btn_next"
+                            tabindex="0"
+                            type="button"
+                            aria-label="Next slide"
+                            aria-disabled="false"
+                          >
+                            <img src="./assets/images/btn_next.png" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                      <!-- btn-wrap -->
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/section04_img_1.jpg" alt="" />
+                  <div class="info">
+                    <div>
+                      <div class="tit">어린이 수의사체험</div>
+                      <div class="exp">
+                        해양동물 전문구조치료센터! 해양쓰레기로 상처받은
+                        해양동물을 치료해주세요!
+                      </div>
+                      <div class="btn-wrap">
+                        <div class="btn">
+                          <button
+                            class="btn_prev"
+                            tabindex="0"
+                            type="button"
+                            aria-label="Previous slide"
+                            aria-disabled="false"
+                          >
+                            <img src="./assets/images/btn_prev.png" alt="" />
+                          </button>
+                          <button
+                            class="btn_next"
+                            tabindex="0"
+                            type="button"
+                            aria-label="Next slide"
+                            aria-disabled="false"
+                          >
+                            <img src="./assets/images/btn_next.png" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                      <!-- btn-wrap -->
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/section04_img_2.jpg" alt="" />
+                  <div class="info">
+                    <div>
+                      <div class="tit">바다사자의 놀라운 비밀</div>
+                      <div class="exp">
+                        아쿠아리스트가 알려주는 바다사자의 요모조모! 먹이 먹는
+                        모습과 행동풍부화 시간까지
+                      </div>
+                      <div class="btn-wrap">
+                        <div class="btn">
+                          <button
+                            class="btn_prev"
+                            tabindex="0"
+                            type="button"
+                            aria-label="Previous slide"
+                            aria-disabled="false"
+                          >
+                            <img src="./assets/images/btn_prev.png" alt="" />
+                          </button>
+                          <button
+                            class="btn_next"
+                            tabindex="0"
+                            type="button"
+                            aria-label="Next slide"
+                            aria-disabled="false"
+                          >
+                            <img src="./assets/images/btn_next.png" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                      <!-- btn-wrap -->
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/section04_img_3.jpg" alt="" />
+                  <div class="info">
+                    <div>
+                      <div class="tit">라디오 펭스타!</div>
+                      <div class="exp">
+                        먹이 먹는 펭귄 모습과 아쿠아리스트가 소개하는 펭귄의
+                        특징들과 POP QUIZ까지!
+                      </div>
+                      <div class="btn-wrap">
+                        <div class="btn">
+                          <button
+                            class="btn_prev"
+                            tabindex="0"
+                            type="button"
+                            aria-label="Previous slide"
+                            aria-disabled="false"
+                          >
+                            <img src="./assets/images/btn_prev.png" alt="" />
+                          </button>
+                          <button
+                            class="btn_next"
+                            tabindex="0"
+                            type="button"
+                            aria-label="Next slide"
+                            aria-disabled="false"
+                          >
+                            <img src="./assets/images/btn_next.png" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                      <!-- btn-wrap -->
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/section04_img_4.jpg" alt="" />
+                  <div class="info">
+                    <div>
+                      <div class="tit">바다 숲 구조대</div>
+                      <div class="exp">
+                        오염된 바다숲(해양환경)을 구조하는 방법을 아쿠아리움에서
+                        배워보자
+                      </div>
+                      <div class="btn-wrap">
+                        <div class="btn">
+                          <button
+                            class="btn_prev"
+                            tabindex="0"
+                            type="button"
+                            aria-label="Previous slide"
+                            aria-disabled="false"
+                          >
+                            <img src="./assets/images/btn_prev.png" alt="" />
+                          </button>
+                          <button
+                            class="btn_next"
+                            tabindex="0"
+                            type="button"
+                            aria-label="Next slide"
+                            aria-disabled="false"
+                          >
+                            <img src="./assets/images/btn_next.png" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                      <!-- btn-wrap -->
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/section04_img_5.jpg" alt="" />
+                  <div class="info">
+                    <div>
+                      <div class="tit">수다리 이야기</div>
+                      <div class="exp">
+                        아삭아삭! 수달이들의 먹방 ASMR과 야생에서 보이는 건강한
+                        활동까지!
+                      </div>
+                      <div class="btn-wrap">
+                        <div class="btn">
+                          <button
+                            class="btn_prev"
+                            tabindex="0"
+                            type="button"
+                            aria-label="Previous slide"
+                            aria-disabled="false"
+                          >
+                            <img src="./assets/images/btn_prev.png" alt="" />
+                          </button>
+                          <button
+                            class="btn_next"
+                            tabindex="0"
+                            type="button"
+                            aria-label="Next slide"
+                            aria-disabled="false"
+                          >
+                            <img src="./assets/images/btn_next.png" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                      <!-- btn-wrap -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination portfolioPage"></div>
+              <span
+                class="swiper-notification"
+                aria-live="assertive"
+                aria-atomic="true"
+              ></span>
+            </div>
+            <div class="rightarea">
+              <div class="swiper portfolio_thumb">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img
+                      class="img-thumb"
+                      src="./assets/images/section04_img_6.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="img-thumb"
+                      src="./assets/images/section04_img_1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="img-thumb"
+                      src="./assets/images/section04_img_2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="img-thumb"
+                      src="./assets/images/section04_img_3.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="img-thumb"
+                      src="./assets/images/section04_img_4.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="img-thumb"
+                      src="./assets/images/section04_img_5.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //content -->
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-wrap">
+        <div class="container footer-cont">
+          <div class="footer-left">
+            <div class="logo-footer">
+              <img src="./assets/images/logo-footer.svg" alt="" />
+            </div>
+            <div class="addr">
+              <address>
+                <span>대구아쿠아리움</span><span>대표이사: 김태훈</span>
+              </address>
+              <address>
+                <span>(주)아쿠아월드</span><br class="pcbr" />
+                <span>대구광역시 동구 동부로 149</span><br class="pcbr" />
+                <span>사업자등록번호 : 256-81-00015</span><br class="pcbr" />
+                <span> Tel : 053.247.8899</span>
+              </address>
+            </div>
+            <small class="copy"
+              >Copyright (c) daeguaquarium All Right Reserved</small
+            >
+          </div>
+          <div class="footer-right">
+            <div class="family-site">
+              <a href="#none">
+                <span>Family Sites</span
+                ><span><i class="fa-solid fa-chevron-down"></i></span>
+              </a>
+            </div>
+            <div class="sns">
+              <ul class="sns-list">
+                <li class="fb">
+                  <a href="https://www.facebook.com/daeguaqua/" target="_blank">
+                    <img src="./assets/images/sns-fb.svg" alt="facebook link" />
+                  </a>
+                </li>
+                <li class="ig">
+                  <a
+                    href="https://www.instagram.com/daeguaqua/"
+                    target="_blank"
+                  >
+                    <img
+                      src="./assets/images/sns-ig.svg"
+                      alt="instagram link"
+                    />
+                  </a>
+                </li>
+                <li class="yt">
+                  <a href="" target="_blank">
+                    <img src="./assets/images/sns-yt.svg" alt="youtube link" />
+                  </a>
+                </li>
+                <li class="ka">
+                  <a href="" target="_blank">
+                    <img
+                      src="./assets/images/sns-ka.svg"
+                      alt="kakao channel link"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- //footer -->
+  </body>
+</html>
