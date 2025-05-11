@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {list-style: none;}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*사진 아래쪽 여백 없애는 초기화 값*/
+img {vertical-align: top;} 
+
+

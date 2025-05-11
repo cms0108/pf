@@ -1,0 +1,366 @@
+main {
+  background-color: #fff;
+  height: 4650px;
+}
+
+nav {
+  /* background-color: antiquewhite; */
+  width: 390px;
+  height: 30px;
+  padding: 0 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  position: fixed;
+  top: 62px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+}
+.nav_left {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  cursor: pointer;
+}
+.nav_left img {
+  height: 24px;
+}
+.nav_left h1 {
+  font-family: "Riasans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.nav_right {
+  display: flex;
+  gap: 8px;
+}
+
+.tip-modal {
+  width: 390px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  background: rgba(51, 51, 51, 0.1); /* 반투명 배경 */
+  backdrop-filter: blur(10px);          /* 블러 효과 */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* 흐릿한 테두리 */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  /* 은은한 그림자 */
+  display: none; 
+  z-index: 99999;
+}
+
+/* 왼쪽 슬라이드 메뉴 */
+.tip-modal-content {
+  background: white;
+  width: 131px;
+  height: 88px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  
+  padding: 15px;
+  box-shadow: 4px 0 10px rgba(0,0,0,0.2);
+  transform: translate(-100px, 70px);
+  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* #shoptopia_gray {
+  color: var(--gray200);
+}  */
+/* 활성화 */
+.tip-modal.active {
+  display: block;
+  
+}
+.tip-modal.active .tip-modal-content {
+  transform: translate( 14px, 105px);
+}
+/* //헤더 */
+/* 탭바 */
+.tab-content {
+  margin-top: 150px;
+  background-color: #fff;
+  
+}
+.market_tabs {
+  width: 390px;
+  height: 150px;
+  
+  display: flex;
+  align-items: end;
+  border-bottom: 2px solid var(--gray200);
+  padding: 0 14px 8px;
+  gap: 18px;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  background-color: #fff;
+}
+
+.tab {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--gray200);
+  cursor: pointer;
+  position: relative;
+}
+
+.tab.active {
+  color: var(--black);
+}
+
+.tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #38D892;
+}
+/* //텝바 */
+/* FEED PAGE */
+/* feed1~7 */
+.tab-content .feed1 .profile,
+.tab-content .feed2 .profile,
+.tab-content .feed3 .profile,
+.tab-content .feed4 .profile,
+.tab-content .feed5 .profile,
+.tab-content .feed6 .profile,
+.tab-content .feed7 .profile,
+.tab-content .feed8 .profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tab-content .feed1 .profile img,
+.tab-content .feed2 .profile img,
+.tab-content .feed3 .profile img,
+.tab-content .feed4 .profile img,
+.tab-content .feed5 .profile img,
+.tab-content .feed6 .profile img,
+.tab-content .feed7 .profile img,
+.tab-content .feed8 .profile img {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.tab-content .feed1 .profile .profile_area,
+.tab-content .feed2 .profile .profile_area,
+.tab-content .feed3 .profile .profile_area,
+.tab-content .feed4 .profile .profile_area,
+.tab-content .feed5 .profile .profile_area,
+.tab-content .feed6 .profile .profile_area,
+.tab-content .feed7 .profile .profile_area,
+.tab-content .feed8 .profile .profile_area {
+  flex: 1;
+  margin-left: 9px; /* 이미지와의 간격 유지 */
+}
+.tab-content .feed1 .profile h2,
+.tab-content .feed2 .profile h2,
+.tab-content .feed3 .profile h2,
+.tab-content .feed4 .profile h2,
+.tab-content .feed5 .profile h2
+.tab-content .feed6 .profile h2
+.tab-content .feed7 .profile h2
+.tab-content .feed8 .profile h2 {
+  font-size: 1.3rem;
+}
+.tab-content .feed1 .profile p,
+.tab-content .feed2 .profile p,
+.tab-content .feed3 .profile p,
+.tab-content .feed4 .profile p,
+.tab-content .feed5 .profile p,
+.tab-content .feed6 .profile p,
+.tab-content .feed7 .profile p,
+.tab-content .feed8 .profile p {
+  font-size: 1.2rem;
+}
+.tab-content .feed1 .profile .follow,
+.tab-content .feed2 .profile .follow,
+.tab-content .feed3 .profile .follow,
+.tab-content .feed4 .profile .follow,
+.tab-content .feed5 .profile .follow,
+.tab-content .feed6 .profile .follow,
+.tab-content .feed7 .profile .follow,
+.tab-content .feed8 .profile .follow {
+  width: 6.6rem;
+  height: 3.2rem;
+  border: 1px solid black;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+.container.bulletin_icon {
+  display: flex;
+  justify-content: space-between;
+}
+.container.bulletin_icon .btn {
+  display: flex;
+  gap: 10px;
+}
+.container.bulletin_icon .time {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.bulletin_txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 14px 20px 14px;
+  box-sizing: border-box;
+}
+.text_group {
+  display: flex;
+  flex-direction: row; /* 가로 정렬 */
+  align-items: center;
+  gap: 9px; /* h2와 p 간격 고정 */
+  flex: 1;
+  min-width: 0; /* ...처리를 위해 필수 */
+}
+.text_group h2 {
+  font-size: 16px;
+  margin: 0;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.text_group p {
+  font-size: 14px;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+.more_btn {
+  flex-shrink: 0;
+}
+.more-button {
+  font-size: 12px;
+  color: var(--gray500);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.feed1 .bulletin_txt h2,
+.feed2 .bulletin_txt h2,
+.feed3 .bulletin_txt h2,
+.feed4 .bulletin_txt h2,
+.feed5 .bulletin_txt h2,
+.feed6 .bulletin_txt h2,
+.feed7 .bulletin_txt h2,
+.feed8 .bulletin_txt h2,
+.feed1 .bulletin_txt p,
+.feed2 .bulletin_txt p,
+.feed3 .bulletin_txt p,
+.feed4 .bulletin_txt p,
+.feed5 .bulletin_txt p,
+.feed6 .bulletin_txt p,
+.feed7 .bulletin_txt p,
+.feed8 .bulletin_txt p,
+.feed1 .bulletin_txt a,
+.feed2 .bulletin_txt a,
+.feed3 .bulletin_txt a,
+.feed4 .bulletin_txt a,
+.feed5 .bulletin_txt a
+.feed6 .bulletin_txt a
+.feed7 .bulletin_txt a
+.feed8 .bulletin_txt a {
+  font-size: 1.3rem;
+}
+
+/* User Recommendation */
+.recommendation {
+  background-color: var(--gray50);
+  padding: 30px 14px;
+  font-family: sans-serif;
+  max-width: 390px;
+  margin: 10px auto 30px;
+}
+.recommendation .recommend-title {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.recommendation .user-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  height: 203px; 
+}
+.recommendation .user-list .user-card {
+  background-color: var(--gray100);
+  border-radius: 10px;
+  padding: 16px 10px 10px;
+  width: 114px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recommendation .user-list .user-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+.recommendation .user-list .user-card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 3px 0;
+}
+.recommendation .user-list .user-card p {
+  font-size: 12px;
+  color: var(--gray500);
+  margin: 0;
+  text-align: center;
+}
+.user-card p:nth-of-type(1) {
+  margin-bottom: 2px; 
+}
+.user-card p:nth-of-type(2) {
+  margin-bottom: 9px; 
+}
+.recommendation .user-list .recommend_follow {
+  padding: 6.5px 34px;
+  background-color: var(--gray200);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--black);
+  transition: background-color 0.2s;
+  margin-top: 9px;
+}
+/* 하단 gnb */
+.footer_nav {
+  width: 390px;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 14px 10px;
+  background-color: #FFF;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 1px solid var(--gray100);
+
+}
+/* //하단 gnb */

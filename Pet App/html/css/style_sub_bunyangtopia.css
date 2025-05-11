@@ -1,0 +1,258 @@
+
+main {
+  background-color: #fff;
+  height: 980px;
+/* 헤더 */
+}
+nav {
+  /* background-color: antiquewhite; */
+  width: 390px;
+  
+  padding: 0 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  position: fixed;
+  top: 62px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+}
+.nav_left {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  }
+.nav_left img {
+  height: 24px;
+}
+.nav_left h1 {
+  font-family: "Riasans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.nav_right {
+  display: flex;
+  gap: 8px;
+}
+.top_bg {
+  width: 390px;
+  height: 100px;
+  padding: 0 14px 10px;
+  gap: 18px;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  background-color: #fff;
+}
+.mypage {
+  margin-top: 100px;
+  background-color: #fff;
+  padding: 22px 14px 30px;
+}
+/* //헤더 */
+
+/* 탭바 */
+.tab-content {
+  margin-top: 150px;
+  background-color: #fff;
+  
+}
+.market_tabs {
+  width: 390px;
+  height: 150px;
+  
+  display: flex;
+  align-items: end;
+  border-bottom: 2px solid var(--gray200);
+  padding: 0 14px 8px;
+  gap: 18px;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  background-color: #fff;
+}
+
+.tab {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--gray200);
+  cursor: pointer;
+  position: relative;
+}
+
+.tab.active {
+  color: var(--black);
+}
+
+.tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #38D892;
+}
+/* //텝바 */
+
+/* 필터 */
+.filters {
+  margin-top: 150px;
+  display: flex;
+  gap: 8px;
+  padding: 10px 14px;
+  overflow-x: auto;
+}
+.filters button {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: #333;
+}
+.filters .active {
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+.divider {
+  height: 1px;
+  background-color: #ddd;
+}
+
+/* card */
+.card {
+  margin: 20px 14px;
+}
+.card .card_sec {
+  display: flex;
+  align-items: flex-start;
+}
+.card .card_sec:nth-child(3),
+.card .card_sec:nth-child(5),
+.card .card_sec:nth-child(7),
+.card .card_sec:nth-child(9),
+.card .card_sec:nth-child(11) {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 16px;
+}
+.card .card_sec img:first-child {
+  width: 114px;
+  height: 114px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.card .card_sec .sec_txt {
+  margin-left: 11px;
+  color: var(--black);
+}
+.card .card_sec .sec_txt h3 {
+  font-size: 1.6rem;
+  margin-top: -5px;
+}
+.card .card_sec .sec_txt p {
+  display: inline-block;
+  background-color: var(--color-1);
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 2px 6px;
+  border-radius: 16px;
+  margin: 11px 7px 11px 0;
+}
+.card .card_sec .sec_txt span {
+  display: block;
+  font-size: 1.4rem;
+}
+.card .card_sec img:last-child {
+  width: 60px;
+  height: auto;
+  margin-left: auto;
+}
+.card .card_sec .sec_txt .price-row {
+  display: flex;
+  gap: 9px;
+  text-align: center;
+}
+.card .card_sec .sec_txt .price-row span:nth-child(1) {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 4px;
+}
+.card .card_sec .sec_txt .price-row span {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.card .sec_txt .check {
+  margin-top: 8px;
+  margin-bottom: 11px;
+}
+.card .check .check_sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .check .check_left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card .check .check_left .like,
+.card .check .check_left .hits {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.card .check .check_sec img {
+  width: 12px;
+  height: auto;
+}
+.card .check .time {
+  margin-left: 136px;
+}
+.card .check .time2 {
+  margin-left: 127px;
+}
+.card .check .time3 {
+  margin-left: 123px;
+}
+.card .check .time4,
+.card .check .time6 {
+  margin-left: 133px;
+}
+.card .check .time5 {
+  margin-left: 129px;
+}
+.card .check .check_sec p {
+  background-color: transparent !important;
+  padding: 0;
+  border-radius: 0;
+  margin: 0;
+  font-size: 1rem;
+  color: var(--gray300);
+}
+/* 하단 gnb */
+.footer_nav {
+  width: 390px;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 14px 10px;
+  background-color: #FFF;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 1px solid var(--gray100);
+
+}
+/* //하단 gnb */

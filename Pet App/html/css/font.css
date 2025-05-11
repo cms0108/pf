@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Pretendard";
+  font-display: swap;
+  src: url("../fonts/Pretendard/variable/PretendardVariable.ttf");
+}
+@font-face {
+  font-family: "Riasans";
+  font-display: swap;
+  src: url("../fonts/ria_sans/RiaSans-Bold.otf");
+}
+html {
+  font-size: 10px;
+  font-family: "Pretendard", "Noto Sans KR", "Inter", sans-serif;
+  word-break: keep-all;
+}
+body {
+  font-size: 1rem;
+  font-family: "Pretendard", "Riasans", "Inter", sans-serif;
+}
